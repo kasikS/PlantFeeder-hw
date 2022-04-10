@@ -1,0 +1,1187 @@
+EESchema Schematic File Version 4
+LIBS:podlewaczka-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L podlewaczka:STM32L152_DISCO J7
+U 2 1 59FFCC17
+P 5900 2300
+F 0 "J7" H 5850 3700 50  0000 L CNN
+F 1 "STM32L152_DISCO" H 6650 800 50  0000 C CNN
+F 2 "fp:STM32L152_DISCO" H 5900 2300 50  0001 C CNN
+F 3 "~" H 5900 2300 50  0001 C CNN
+	2    5900 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:BC558-RESCUE-podlewaczka Q1
+U 1 1 59FFCE3B
+P 7900 2900
+F 0 "Q1" H 8091 2946 50  0000 L CNN
+F 1 "BC558" H 8091 2855 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8100 2825 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 7900 2900 50  0001 L CNN
+	1    7900 2900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8000 2500 8000 2700
+$Comp
+L podlewaczka-rescue:Conn_01x02-RESCUE-podlewaczka J8
+U 1 1 5A0DCE84
+P 8200 3200
+F 0 "J8" H 8280 3192 50  0000 L CNN
+F 1 "Conn_01x02" H 8280 3101 50  0000 L CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_02x3.50mm_Angled" H 8200 3200 50  0001 C CNN
+F 3 "~" H 8200 3200 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/Phoenix-Contact/1988956/" H 8200 3200 60  0001 C CNN "Mouser"
+	1    8200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR027
+U 1 1 5A0DCF31
+P 8000 3400
+F 0 "#PWR027" H 8000 3150 50  0001 C CNN
+F 1 "GND" H 8005 3227 50  0000 C CNN
+F 2 "" H 8000 3400 50  0001 C CNN
+F 3 "" H 8000 3400 50  0001 C CNN
+	1    8000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3300 8000 3400
+Wire Wire Line
+	8000 3100 8000 3200
+$Comp
+L podlewaczka-rescue:R-RESCUE-podlewaczka R1
+U 1 1 5A0DD16A
+P 7450 2900
+F 0 "R1" V 7243 2900 50  0000 C CNN
+F 1 "680" V 7334 2900 50  0000 C CNN
+F 2 "Resistors THD:RES1016-630X250" V 7380 2900 50  0001 C CNN
+F 3 "" H 7450 2900 50  0001 C CNN
+	1    7450 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 2900 7600 2900
+$Comp
+L podlewaczka-rescue:Conn_01x03-RESCUE-podlewaczka J3
+U 1 1 5A0DD708
+P 1700 1200
+F 0 "J3" H 1650 1000 50  0000 L CNN
+F 1 "Conn_01x03" H 1300 1400 50  0000 L CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_03x3.50mm_Angled" H 1700 1200 50  0001 C CNN
+F 3 "~" H 1700 1200 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/Phoenix-Contact/1988969" H 1700 1200 60  0001 C CNN "Mouser"
+	1    1700 1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:+3V3-RESCUE-podlewaczka #PWR010
+U 1 1 5A0DD797
+P 2400 1000
+F 0 "#PWR010" H 2400 850 50  0001 C CNN
+F 1 "+3V3" H 2415 1173 50  0000 C CNN
+F 2 "" H 2400 1000 50  0001 C CNN
+F 3 "" H 2400 1000 50  0001 C CNN
+	1    2400 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR07
+U 1 1 5A0DD7B4
+P 2000 1400
+F 0 "#PWR07" H 2000 1150 50  0001 C CNN
+F 1 "GND" H 2005 1227 50  0000 C CNN
+F 2 "" H 2000 1400 50  0001 C CNN
+F 3 "" H 2000 1400 50  0001 C CNN
+	1    2000 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C8
+U 1 1 5A0DD83F
+P 8450 2600
+F 0 "C8" V 8198 2600 50  0000 C CNN
+F 1 "100n" V 8289 2600 50  0000 C CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 8488 2450 50  0001 C CNN
+F 3 "" H 8450 2600 50  0001 C CNN
+	1    8450 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 2600 8000 2600
+Connection ~ 8000 2600
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR032
+U 1 1 5A0DD92E
+P 8700 2700
+F 0 "#PWR032" H 8700 2450 50  0001 C CNN
+F 1 "GND" H 8705 2527 50  0000 C CNN
+F 2 "" H 8700 2700 50  0001 C CNN
+F 3 "" H 8700 2700 50  0001 C CNN
+	1    8700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2600 8700 2700
+Wire Wire Line
+	8700 2600 8600 2600
+Wire Wire Line
+	2400 1100 1900 1100
+Wire Wire Line
+	2400 1000 2400 1300
+Wire Wire Line
+	1900 1300 2000 1300
+Wire Wire Line
+	2000 1300 2000 1400
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C3
+U 1 1 5A0DDA77
+P 2400 1450
+F 0 "C3" H 2285 1404 50  0000 R CNN
+F 1 "100n" H 2285 1495 50  0000 R CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 2438 1300 50  0001 C CNN
+F 3 "" H 2400 1450 50  0001 C CNN
+	1    2400 1450
+	1    0    0    1   
+$EndComp
+Connection ~ 2400 1100
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR011
+U 1 1 5A0DDC1C
+P 2400 1700
+F 0 "#PWR011" H 2400 1450 50  0001 C CNN
+F 1 "GND" H 2405 1527 50  0000 C CNN
+F 2 "" H 2400 1700 50  0001 C CNN
+F 3 "" H 2400 1700 50  0001 C CNN
+	1    2400 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1600 2400 1700
+$Comp
+L podlewaczka:ESP8266 U2
+U 1 1 5A0DEA56
+P 8300 1800
+F 0 "U2" H 8300 2287 60  0000 C CNN
+F 1 "ESP8266" H 8300 2181 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x04_Pitch2.54mm" H 8300 1800 60  0001 C CNN
+F 3 "" H 8300 1800 60  0001 C CNN
+	1    8300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:+3V3-RESCUE-podlewaczka #PWR035
+U 1 1 5A0DF612
+P 9250 1850
+F 0 "#PWR035" H 9250 1700 50  0001 C CNN
+F 1 "+3V3" H 9450 1900 50  0000 C CNN
+F 2 "" H 9250 1850 50  0001 C CNN
+F 3 "" H 9250 1850 50  0001 C CNN
+	1    9250 1850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1850 9250 2050
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C11
+U 1 1 5A0DF61A
+P 9250 2200
+F 0 "C11" H 9135 2154 50  0000 R CNN
+F 1 "100n" H 9135 2245 50  0000 R CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 9288 2050 50  0001 C CNN
+F 3 "" H 9250 2200 50  0001 C CNN
+	1    9250 2200
+	1    0    0    1   
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR036
+U 1 1 5A0DF622
+P 9250 2450
+F 0 "#PWR036" H 9250 2200 50  0001 C CNN
+F 1 "GND" H 9255 2277 50  0000 C CNN
+F 2 "" H 9250 2450 50  0001 C CNN
+F 3 "" H 9250 2450 50  0001 C CNN
+	1    9250 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2350 9250 2450
+Wire Wire Line
+	9250 2400 8900 2400
+Wire Wire Line
+	8900 2400 8900 2000
+Wire Wire Line
+	8900 2000 8800 2000
+Connection ~ 9250 2400
+Wire Wire Line
+	8800 1600 9700 1600
+$Comp
+L podlewaczka-rescue:R-RESCUE-podlewaczka R6
+U 1 1 5A0DFBAA
+P 9700 1800
+F 0 "R6" H 9630 1754 50  0000 R CNN
+F 1 "680" H 9630 1845 50  0000 R CNN
+F 2 "Resistors THD:RES1016-630X250" V 9630 1800 50  0001 C CNN
+F 3 "" H 9700 1800 50  0001 C CNN
+	1    9700 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L podlewaczka-rescue:+3V3-RESCUE-podlewaczka #PWR041
+U 1 1 5A0DFBF7
+P 9700 1550
+F 0 "#PWR041" H 9700 1400 50  0001 C CNN
+F 1 "+3V3" H 9715 1723 50  0000 C CNN
+F 2 "" H 9700 1550 50  0001 C CNN
+F 3 "" H 9700 1550 50  0001 C CNN
+	1    9700 1550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1550 9700 1650
+Connection ~ 9700 1600
+Wire Wire Line
+	9250 1900 8800 1900
+Connection ~ 9250 1900
+Wire Wire Line
+	8800 1700 9450 1700
+Wire Wire Line
+	9450 1700 9450 2050
+Wire Wire Line
+	9450 2050 9700 2050
+Wire Wire Line
+	9700 1950 9700 2100
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C12
+U 1 1 5A0DFD67
+P 9700 2250
+F 0 "C12" H 9585 2204 50  0000 R CNN
+F 1 "100n" H 9585 2295 50  0000 R CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 9738 2100 50  0001 C CNN
+F 3 "" H 9700 2250 50  0001 C CNN
+	1    9700 2250
+	1    0    0    1   
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR042
+U 1 1 5A0DFD6E
+P 9700 2500
+F 0 "#PWR042" H 9700 2250 50  0001 C CNN
+F 1 "GND" H 9705 2327 50  0000 C CNN
+F 2 "" H 9700 2500 50  0001 C CNN
+F 3 "" H 9700 2500 50  0001 C CNN
+	1    9700 2500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2400 9700 2500
+Connection ~ 9700 2050
+$Comp
+L podlewaczka-rescue:Conn_01x03-RESCUE-podlewaczka J4
+U 1 1 5A0E5331
+P 1700 2500
+F 0 "J4" H 1650 2300 50  0000 L CNN
+F 1 "Conn_01x03" H 1300 2700 50  0000 L CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_03x3.50mm_Angled" H 1700 2500 50  0001 C CNN
+F 3 "~" H 1700 2500 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/Phoenix-Contact/1988969" H 1700 2500 60  0001 C CNN "Mouser"
+	1    1700 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:+3V3-RESCUE-podlewaczka #PWR012
+U 1 1 5A0E5338
+P 2400 2300
+F 0 "#PWR012" H 2400 2150 50  0001 C CNN
+F 1 "+3V3" H 2415 2473 50  0000 C CNN
+F 2 "" H 2400 2300 50  0001 C CNN
+F 3 "" H 2400 2300 50  0001 C CNN
+	1    2400 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR08
+U 1 1 5A0E533E
+P 2000 2700
+F 0 "#PWR08" H 2000 2450 50  0001 C CNN
+F 1 "GND" H 2005 2527 50  0000 C CNN
+F 2 "" H 2000 2700 50  0001 C CNN
+F 3 "" H 2000 2700 50  0001 C CNN
+	1    2000 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2400 1900 2400
+Wire Wire Line
+	2400 2300 2400 2600
+Wire Wire Line
+	1900 2600 2000 2600
+Wire Wire Line
+	2000 2600 2000 2700
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C4
+U 1 1 5A0E5348
+P 2400 2750
+F 0 "C4" H 2285 2704 50  0000 R CNN
+F 1 "100n" H 2285 2795 50  0000 R CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 2438 2600 50  0001 C CNN
+F 3 "" H 2400 2750 50  0001 C CNN
+	1    2400 2750
+	1    0    0    1   
+$EndComp
+Connection ~ 2400 2400
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR013
+U 1 1 5A0E5350
+P 2400 3000
+F 0 "#PWR013" H 2400 2750 50  0001 C CNN
+F 1 "GND" H 2405 2827 50  0000 C CNN
+F 2 "" H 2400 3000 50  0001 C CNN
+F 3 "" H 2400 3000 50  0001 C CNN
+	1    2400 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2900 2400 3000
+$Comp
+L podlewaczka-rescue:Conn_01x03-RESCUE-podlewaczka J1
+U 1 1 5A0E53E8
+P 700 1900
+F 0 "J1" H 650 1700 50  0000 L CNN
+F 1 "Conn_01x03" H 300 2100 50  0000 L CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_03x3.50mm_Angled" H 700 1900 50  0001 C CNN
+F 3 "~" H 700 1900 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/Phoenix-Contact/1988969" H 700 1900 60  0001 C CNN "Mouser"
+	1    700  1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:+3V3-RESCUE-podlewaczka #PWR03
+U 1 1 5A0E53EF
+P 1400 1700
+F 0 "#PWR03" H 1400 1550 50  0001 C CNN
+F 1 "+3V3" H 1415 1873 50  0000 C CNN
+F 2 "" H 1400 1700 50  0001 C CNN
+F 3 "" H 1400 1700 50  0001 C CNN
+	1    1400 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR01
+U 1 1 5A0E53F5
+P 1000 2100
+F 0 "#PWR01" H 1000 1850 50  0001 C CNN
+F 1 "GND" H 1005 1927 50  0000 C CNN
+F 2 "" H 1000 2100 50  0001 C CNN
+F 3 "" H 1000 2100 50  0001 C CNN
+	1    1000 2100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1800 900  1800
+Wire Wire Line
+	1400 1700 1400 2000
+Wire Wire Line
+	900  2000 1000 2000
+Wire Wire Line
+	1000 2000 1000 2100
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C1
+U 1 1 5A0E53FF
+P 1400 2150
+F 0 "C1" H 1285 2104 50  0000 R CNN
+F 1 "100n" H 1285 2195 50  0000 R CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 1438 2000 50  0001 C CNN
+F 3 "" H 1400 2150 50  0001 C CNN
+	1    1400 2150
+	1    0    0    1   
+$EndComp
+Connection ~ 1400 1800
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR04
+U 1 1 5A0E5407
+P 1400 2400
+F 0 "#PWR04" H 1400 2150 50  0001 C CNN
+F 1 "GND" H 1405 2227 50  0000 C CNN
+F 2 "" H 1400 2400 50  0001 C CNN
+F 3 "" H 1400 2400 50  0001 C CNN
+	1    1400 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2300 1400 2400
+$Comp
+L podlewaczka-rescue:Conn_01x03-RESCUE-podlewaczka J2
+U 1 1 5A0E54D7
+P 700 3100
+F 0 "J2" H 650 2900 50  0000 L CNN
+F 1 "Conn_01x03" H 300 3300 50  0000 L CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_03x3.50mm_Angled" H 700 3100 50  0001 C CNN
+F 3 "~" H 700 3100 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/Phoenix-Contact/1988969" H 700 3100 60  0001 C CNN "Mouser"
+	1    700  3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:+3V3-RESCUE-podlewaczka #PWR05
+U 1 1 5A0E54DE
+P 1400 2900
+F 0 "#PWR05" H 1400 2750 50  0001 C CNN
+F 1 "+3V3" H 1415 3073 50  0000 C CNN
+F 2 "" H 1400 2900 50  0001 C CNN
+F 3 "" H 1400 2900 50  0001 C CNN
+	1    1400 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR02
+U 1 1 5A0E54E4
+P 1000 3300
+F 0 "#PWR02" H 1000 3050 50  0001 C CNN
+F 1 "GND" H 1005 3127 50  0000 C CNN
+F 2 "" H 1000 3300 50  0001 C CNN
+F 3 "" H 1000 3300 50  0001 C CNN
+	1    1000 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3000 900  3000
+Wire Wire Line
+	1400 2900 1400 3200
+Wire Wire Line
+	900  3200 1000 3200
+Wire Wire Line
+	1000 3200 1000 3300
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C2
+U 1 1 5A0E54EE
+P 1400 3350
+F 0 "C2" H 1285 3304 50  0000 R CNN
+F 1 "100n" H 1285 3395 50  0000 R CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 1438 3200 50  0001 C CNN
+F 3 "" H 1400 3350 50  0001 C CNN
+	1    1400 3350
+	1    0    0    1   
+$EndComp
+Connection ~ 1400 3000
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR06
+U 1 1 5A0E54F6
+P 1400 3600
+F 0 "#PWR06" H 1400 3350 50  0001 C CNN
+F 1 "GND" H 1405 3427 50  0000 C CNN
+F 2 "" H 1400 3600 50  0001 C CNN
+F 3 "" H 1400 3600 50  0001 C CNN
+	1    1400 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3500 1400 3600
+Wire Wire Line
+	1900 1200 3100 1200
+Wire Wire Line
+	3100 1200 3100 2000
+Wire Wire Line
+	3100 2000 4200 2000
+Wire Wire Line
+	4200 2100 2900 2100
+Wire Wire Line
+	2900 2100 2900 1900
+Wire Wire Line
+	2900 1900 900  1900
+Wire Wire Line
+	1900 2500 2900 2500
+Wire Wire Line
+	2900 2500 2900 2200
+Wire Wire Line
+	2900 2200 4200 2200
+$Comp
+L podlewaczka-rescue:Conn_01x03-RESCUE-podlewaczka J5
+U 1 1 5A0E57A7
+P 1700 3700
+F 0 "J5" H 1650 3500 50  0000 L CNN
+F 1 "Conn_01x03" H 1300 3900 50  0000 L CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_03x3.50mm_Angled" H 1700 3700 50  0001 C CNN
+F 3 "~" H 1700 3700 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/Phoenix-Contact/1988969" H 1700 3700 60  0001 C CNN "Mouser"
+	1    1700 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:+3V3-RESCUE-podlewaczka #PWR014
+U 1 1 5A0E57AE
+P 2400 3500
+F 0 "#PWR014" H 2400 3350 50  0001 C CNN
+F 1 "+3V3" H 2415 3673 50  0000 C CNN
+F 2 "" H 2400 3500 50  0001 C CNN
+F 3 "" H 2400 3500 50  0001 C CNN
+	1    2400 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR09
+U 1 1 5A0E57B4
+P 2000 3900
+F 0 "#PWR09" H 2000 3650 50  0001 C CNN
+F 1 "GND" H 2005 3727 50  0000 C CNN
+F 2 "" H 2000 3900 50  0001 C CNN
+F 3 "" H 2000 3900 50  0001 C CNN
+	1    2000 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3600 1900 3600
+Wire Wire Line
+	2400 3500 2400 3800
+Wire Wire Line
+	1900 3800 2000 3800
+Wire Wire Line
+	2000 3800 2000 3900
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C5
+U 1 1 5A0E57BE
+P 2400 3950
+F 0 "C5" H 2285 3904 50  0000 R CNN
+F 1 "100n" H 2285 3995 50  0000 R CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 2438 3800 50  0001 C CNN
+F 3 "" H 2400 3950 50  0001 C CNN
+	1    2400 3950
+	1    0    0    1   
+$EndComp
+Connection ~ 2400 3600
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR015
+U 1 1 5A0E57C6
+P 2400 4200
+F 0 "#PWR015" H 2400 3950 50  0001 C CNN
+F 1 "GND" H 2405 4027 50  0000 C CNN
+F 2 "" H 2400 4200 50  0001 C CNN
+F 3 "" H 2400 4200 50  0001 C CNN
+	1    2400 4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4100 2400 4200
+Wire Wire Line
+	900  3100 3000 3100
+Wire Wire Line
+	3000 3100 3000 2300
+Wire Wire Line
+	3000 2300 4200 2300
+Wire Wire Line
+	1900 3700 3100 3700
+Wire Wire Line
+	3100 3700 3100 2900
+Wire Wire Line
+	3100 2900 4200 2900
+Wire Wire Line
+	6100 1600 7800 1600
+Wire Wire Line
+	7800 1700 6100 1700
+NoConn ~ 7800 1900
+NoConn ~ 7800 2000
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR020
+U 1 1 5A0E74CA
+P 6200 1100
+F 0 "#PWR020" H 6200 850 50  0001 C CNN
+F 1 "GND" H 6205 927 50  0000 C CNN
+F 2 "" H 6200 1100 50  0001 C CNN
+F 3 "" H 6200 1100 50  0001 C CNN
+	1    6200 1100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6200 1100 6100 1100
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR021
+U 1 1 5A0E7781
+P 6200 3700
+F 0 "#PWR021" H 6200 3450 50  0001 C CNN
+F 1 "GND" H 6205 3527 50  0000 C CNN
+F 2 "" H 6200 3700 50  0001 C CNN
+F 3 "" H 6200 3700 50  0001 C CNN
+	1    6200 3700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6200 3700 6100 3700
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR019
+U 1 1 5A0E7812
+P 4100 3700
+F 0 "#PWR019" H 4100 3450 50  0001 C CNN
+F 1 "GND" H 4105 3527 50  0000 C CNN
+F 2 "" H 4100 3700 50  0001 C CNN
+F 3 "" H 4100 3700 50  0001 C CNN
+	1    4100 3700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4100 3700 4200 3700
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR018
+U 1 1 5A0E794C
+P 4100 1800
+F 0 "#PWR018" H 4100 1550 50  0001 C CNN
+F 1 "GND" H 4105 1627 50  0000 C CNN
+F 2 "" H 4100 1800 50  0001 C CNN
+F 3 "" H 4100 1800 50  0001 C CNN
+	1    4100 1800
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4100 1800 4200 1800
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR017
+U 1 1 5A0E7A19
+P 4100 1100
+F 0 "#PWR017" H 4100 850 50  0001 C CNN
+F 1 "GND" H 4105 927 50  0000 C CNN
+F 2 "" H 4100 1100 50  0001 C CNN
+F 3 "" H 4100 1100 50  0001 C CNN
+	1    4100 1100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4100 1100 4200 1100
+NoConn ~ 6100 1200
+NoConn ~ 6100 1300
+NoConn ~ 6100 1400
+NoConn ~ 6100 1500
+NoConn ~ 6100 1800
+NoConn ~ 6100 1900
+NoConn ~ 6100 2000
+NoConn ~ 6100 2600
+NoConn ~ 6100 2700
+NoConn ~ 6100 3300
+NoConn ~ 6100 3400
+NoConn ~ 6100 3500
+NoConn ~ 6100 3600
+NoConn ~ 4200 3600
+NoConn ~ 4200 3500
+NoConn ~ 4200 3400
+NoConn ~ 4200 3300
+NoConn ~ 4200 3200
+NoConn ~ 4200 3100
+NoConn ~ 4200 3000
+NoConn ~ 4200 2800
+NoConn ~ 4200 2500
+NoConn ~ 4200 2400
+NoConn ~ 4200 1900
+NoConn ~ 4200 1700
+NoConn ~ 4200 1600
+NoConn ~ 4200 1500
+NoConn ~ 4200 1400
+NoConn ~ 4200 1300
+NoConn ~ 4200 1200
+$Comp
+L podlewaczka-rescue:BC558-RESCUE-podlewaczka Q4
+U 1 1 5A0E855A
+P 9300 3700
+F 0 "Q4" H 9491 3746 50  0000 L CNN
+F 1 "BC558" H 9491 3655 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 9500 3625 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 9300 3700 50  0001 L CNN
+	1    9300 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9400 3300 9400 3500
+$Comp
+L podlewaczka-rescue:Conn_01x02-RESCUE-podlewaczka J11
+U 1 1 5A0E8569
+P 9600 4000
+F 0 "J11" H 9680 3992 50  0000 L CNN
+F 1 "Conn_01x02" H 9680 3901 50  0000 L CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_02x3.50mm_Angled" H 9600 4000 50  0001 C CNN
+F 3 "~" H 9600 4000 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/Phoenix-Contact/1988956/" H 9600 4000 60  0001 C CNN "Mouser"
+	1    9600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR038
+U 1 1 5A0E8570
+P 9400 4200
+F 0 "#PWR038" H 9400 3950 50  0001 C CNN
+F 1 "GND" H 9405 4027 50  0000 C CNN
+F 2 "" H 9400 4200 50  0001 C CNN
+F 3 "" H 9400 4200 50  0001 C CNN
+	1    9400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4100 9400 4200
+Wire Wire Line
+	9400 3900 9400 4000
+$Comp
+L podlewaczka-rescue:R-RESCUE-podlewaczka R4
+U 1 1 5A0E8578
+P 8850 3700
+F 0 "R4" V 8643 3700 50  0000 C CNN
+F 1 "680" V 8734 3700 50  0000 C CNN
+F 2 "Resistors THD:RES1016-630X250" V 8780 3700 50  0001 C CNN
+F 3 "" H 8850 3700 50  0001 C CNN
+	1    8850 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 3700 9000 3700
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C13
+U 1 1 5A0E8580
+P 9850 3400
+F 0 "C13" V 9598 3400 50  0000 C CNN
+F 1 "100n" V 9689 3400 50  0000 C CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 9888 3250 50  0001 C CNN
+F 3 "" H 9850 3400 50  0001 C CNN
+	1    9850 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 3400 9400 3400
+Connection ~ 9400 3400
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR043
+U 1 1 5A0E8589
+P 10100 3500
+F 0 "#PWR043" H 10100 3250 50  0001 C CNN
+F 1 "GND" H 10105 3327 50  0000 C CNN
+F 2 "" H 10100 3500 50  0001 C CNN
+F 3 "" H 10100 3500 50  0001 C CNN
+	1    10100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3400 10100 3500
+Wire Wire Line
+	10100 3400 10000 3400
+$Comp
+L podlewaczka-rescue:BC558-RESCUE-podlewaczka Q2
+U 1 1 5A0E8657
+P 7900 4300
+F 0 "Q2" H 8091 4346 50  0000 L CNN
+F 1 "BC558" H 8091 4255 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8100 4225 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 7900 4300 50  0001 L CNN
+	1    7900 4300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8000 3900 8000 4100
+$Comp
+L podlewaczka-rescue:Conn_01x02-RESCUE-podlewaczka J9
+U 1 1 5A0E8666
+P 8200 4600
+F 0 "J9" H 8280 4592 50  0000 L CNN
+F 1 "Conn_01x02" H 8280 4501 50  0000 L CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_02x3.50mm_Angled" H 8200 4600 50  0001 C CNN
+F 3 "~" H 8200 4600 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/Phoenix-Contact/1988956/" H 8200 4600 60  0001 C CNN "Mouser"
+	1    8200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR029
+U 1 1 5A0E866D
+P 8000 4800
+F 0 "#PWR029" H 8000 4550 50  0001 C CNN
+F 1 "GND" H 8005 4627 50  0000 C CNN
+F 2 "" H 8000 4800 50  0001 C CNN
+F 3 "" H 8000 4800 50  0001 C CNN
+	1    8000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4700 8000 4800
+Wire Wire Line
+	8000 4500 8000 4600
+$Comp
+L podlewaczka-rescue:R-RESCUE-podlewaczka R2
+U 1 1 5A0E8675
+P 7450 4300
+F 0 "R2" V 7243 4300 50  0000 C CNN
+F 1 "680" V 7334 4300 50  0000 C CNN
+F 2 "Resistors THD:RES1016-630X250" V 7380 4300 50  0001 C CNN
+F 3 "" H 7450 4300 50  0001 C CNN
+	1    7450 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 4300 7600 4300
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C9
+U 1 1 5A0E867D
+P 8450 4000
+F 0 "C9" V 8198 4000 50  0000 C CNN
+F 1 "100n" V 8289 4000 50  0000 C CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 8488 3850 50  0001 C CNN
+F 3 "" H 8450 4000 50  0001 C CNN
+	1    8450 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 4000 8000 4000
+Connection ~ 8000 4000
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR033
+U 1 1 5A0E8686
+P 8700 4100
+F 0 "#PWR033" H 8700 3850 50  0001 C CNN
+F 1 "GND" H 8705 3927 50  0000 C CNN
+F 2 "" H 8700 4100 50  0001 C CNN
+F 3 "" H 8700 4100 50  0001 C CNN
+	1    8700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4000 8700 4100
+Wire Wire Line
+	8700 4000 8600 4000
+$Comp
+L podlewaczka-rescue:BC558-RESCUE-podlewaczka Q5
+U 1 1 5A0E9DB7
+P 9300 5100
+F 0 "Q5" H 9491 5146 50  0000 L CNN
+F 1 "BC558" H 9491 5055 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 9500 5025 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 9300 5100 50  0001 L CNN
+	1    9300 5100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9400 4700 9400 4900
+$Comp
+L podlewaczka-rescue:Conn_01x02-RESCUE-podlewaczka J12
+U 1 1 5A0E9DC6
+P 9600 5400
+F 0 "J12" H 9680 5392 50  0000 L CNN
+F 1 "Conn_01x02" H 9680 5301 50  0000 L CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_02x3.50mm_Angled" H 9600 5400 50  0001 C CNN
+F 3 "~" H 9600 5400 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/Phoenix-Contact/1988956/" H 9600 5400 60  0001 C CNN "Mouser"
+	1    9600 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR040
+U 1 1 5A0E9DCD
+P 9400 5600
+F 0 "#PWR040" H 9400 5350 50  0001 C CNN
+F 1 "GND" H 9405 5427 50  0000 C CNN
+F 2 "" H 9400 5600 50  0001 C CNN
+F 3 "" H 9400 5600 50  0001 C CNN
+	1    9400 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 5500 9400 5600
+Wire Wire Line
+	9400 5300 9400 5400
+$Comp
+L podlewaczka-rescue:R-RESCUE-podlewaczka R5
+U 1 1 5A0E9DD5
+P 8850 5100
+F 0 "R5" V 8643 5100 50  0000 C CNN
+F 1 "680" V 8734 5100 50  0000 C CNN
+F 2 "Resistors THD:RES1016-630X250" V 8780 5100 50  0001 C CNN
+F 3 "" H 8850 5100 50  0001 C CNN
+	1    8850 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 5100 9000 5100
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C14
+U 1 1 5A0E9DDD
+P 9850 4800
+F 0 "C14" V 9598 4800 50  0000 C CNN
+F 1 "100n" V 9689 4800 50  0000 C CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 9888 4650 50  0001 C CNN
+F 3 "" H 9850 4800 50  0001 C CNN
+	1    9850 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 4800 9400 4800
+Connection ~ 9400 4800
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR044
+U 1 1 5A0E9DE6
+P 10100 4900
+F 0 "#PWR044" H 10100 4650 50  0001 C CNN
+F 1 "GND" H 10105 4727 50  0000 C CNN
+F 2 "" H 10100 4900 50  0001 C CNN
+F 3 "" H 10100 4900 50  0001 C CNN
+	1    10100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 4800 10100 4900
+Wire Wire Line
+	10100 4800 10000 4800
+$Comp
+L podlewaczka-rescue:BC558-RESCUE-podlewaczka Q3
+U 1 1 5A0E9DEE
+P 7900 5700
+F 0 "Q3" H 8091 5746 50  0000 L CNN
+F 1 "BC558" H 8091 5655 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8100 5625 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 7900 5700 50  0001 L CNN
+	1    7900 5700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8000 5300 8000 5500
+$Comp
+L podlewaczka-rescue:Conn_01x02-RESCUE-podlewaczka J10
+U 1 1 5A0E9DFD
+P 8200 6000
+F 0 "J10" H 8280 5992 50  0000 L CNN
+F 1 "Conn_01x02" H 8280 5901 50  0000 L CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_02x3.50mm_Angled" H 8200 6000 50  0001 C CNN
+F 3 "~" H 8200 6000 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/Phoenix-Contact/1988956/" H 8200 6000 60  0001 C CNN "Mouser"
+	1    8200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR031
+U 1 1 5A0E9E04
+P 8000 6200
+F 0 "#PWR031" H 8000 5950 50  0001 C CNN
+F 1 "GND" H 8005 6027 50  0000 C CNN
+F 2 "" H 8000 6200 50  0001 C CNN
+F 3 "" H 8000 6200 50  0001 C CNN
+	1    8000 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 6100 8000 6200
+Wire Wire Line
+	8000 5900 8000 6000
+$Comp
+L podlewaczka-rescue:R-RESCUE-podlewaczka R3
+U 1 1 5A0E9E0C
+P 7450 5700
+F 0 "R3" V 7243 5700 50  0000 C CNN
+F 1 "680" V 7334 5700 50  0000 C CNN
+F 2 "Resistors THD:RES1016-630X250" V 7380 5700 50  0001 C CNN
+F 3 "" H 7450 5700 50  0001 C CNN
+	1    7450 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 5700 7600 5700
+$Comp
+L podlewaczka-rescue:C-RESCUE-podlewaczka C10
+U 1 1 5A0E9E14
+P 8450 5400
+F 0 "C10" V 8198 5400 50  0000 C CNN
+F 1 "100n" V 8289 5400 50  0000 C CNN
+F 2 "Capacitors THD:CAPR500-250X720X650" H 8488 5250 50  0001 C CNN
+F 3 "" H 8450 5400 50  0001 C CNN
+	1    8450 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 5400 8000 5400
+Connection ~ 8000 5400
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR034
+U 1 1 5A0E9E1D
+P 8700 5500
+F 0 "#PWR034" H 8700 5250 50  0001 C CNN
+F 1 "GND" H 8705 5327 50  0000 C CNN
+F 2 "" H 8700 5500 50  0001 C CNN
+F 3 "" H 8700 5500 50  0001 C CNN
+	1    8700 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 5400 8700 5500
+Wire Wire Line
+	8700 5400 8600 5400
+Wire Wire Line
+	7300 2900 7200 2900
+Wire Wire Line
+	8700 3700 7100 3700
+Wire Wire Line
+	7300 4300 7000 4300
+Wire Wire Line
+	6900 5100 8700 5100
+Wire Wire Line
+	7300 5700 6800 5700
+Wire Wire Line
+	6100 2800 7200 2800
+Wire Wire Line
+	7200 2800 7200 2900
+Wire Wire Line
+	7100 3700 7100 2900
+Wire Wire Line
+	7100 2900 6100 2900
+Wire Wire Line
+	6100 3000 7000 3000
+Wire Wire Line
+	7000 3000 7000 4300
+Wire Wire Line
+	6900 5100 6900 3100
+Wire Wire Line
+	6900 3100 6100 3100
+Wire Wire Line
+	6100 3200 6800 3200
+Wire Wire Line
+	6800 3200 6800 5700
+NoConn ~ 6100 2500
+NoConn ~ 6100 2400
+NoConn ~ 6100 2300
+NoConn ~ 6100 2200
+NoConn ~ 6100 2100
+$Comp
+L podlewaczka-rescue:Conn_01x03-RESCUE-podlewaczka J6
+U 1 1 5A0EC5D4
+P 3400 2700
+F 0 "J6" H 3480 2742 50  0000 L CNN
+F 1 "UART" H 3480 2651 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3400 2700 50  0001 C CNN
+F 3 "~" H 3400 2700 50  0001 C CNN
+	1    3400 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:GND-RESCUE-podlewaczka #PWR016
+U 1 1 5A0EC78D
+P 3800 3100
+F 0 "#PWR016" H 3800 2850 50  0001 C CNN
+F 1 "GND" H 3805 2927 50  0000 C CNN
+F 2 "" H 3800 3100 50  0001 C CNN
+F 3 "" H 3800 3100 50  0001 C CNN
+	1    3800 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3100 3800 2700
+Wire Wire Line
+	3800 2700 3600 2700
+Wire Wire Line
+	3600 2800 4000 2800
+Wire Wire Line
+	4000 2800 4000 2700
+Wire Wire Line
+	4000 2700 4200 2700
+Wire Wire Line
+	4200 2600 3600 2600
+$Comp
+L power:+5V #PWR?
+U 1 1 5A1AE9A3
+P 6200 900
+F 0 "#PWR?" H 6200 750 50  0001 C CNN
+F 1 "+5V" H 6215 1073 50  0000 C CNN
+F 2 "" H 6200 900 50  0001 C CNN
+F 3 "" H 6200 900 50  0001 C CNN
+	1    6200 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 900  6200 1000
+Wire Wire Line
+	6200 1000 6100 1000
+$Comp
+L power:+5V #PWR?
+U 1 1 5A1B6E10
+P 8000 2500
+F 0 "#PWR?" H 8000 2350 50  0001 C CNN
+F 1 "+5V" H 8015 2673 50  0000 C CNN
+F 2 "" H 8000 2500 50  0001 C CNN
+F 3 "" H 8000 2500 50  0001 C CNN
+	1    8000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5A1B6E61
+P 9400 3300
+F 0 "#PWR?" H 9400 3150 50  0001 C CNN
+F 1 "+5V" H 9415 3473 50  0000 C CNN
+F 2 "" H 9400 3300 50  0001 C CNN
+F 3 "" H 9400 3300 50  0001 C CNN
+	1    9400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5A1B6F90
+P 8000 3900
+F 0 "#PWR?" H 8000 3750 50  0001 C CNN
+F 1 "+5V" H 8015 4073 50  0000 C CNN
+F 2 "" H 8000 3900 50  0001 C CNN
+F 3 "" H 8000 3900 50  0001 C CNN
+	1    8000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5A1B719D
+P 9400 4700
+F 0 "#PWR?" H 9400 4550 50  0001 C CNN
+F 1 "+5V" H 9415 4873 50  0000 C CNN
+F 2 "" H 9400 4700 50  0001 C CNN
+F 3 "" H 9400 4700 50  0001 C CNN
+	1    9400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5A1B733B
+P 8000 5300
+F 0 "#PWR?" H 8000 5150 50  0001 C CNN
+F 1 "+5V" H 8015 5473 50  0000 C CNN
+F 2 "" H 8000 5300 50  0001 C CNN
+F 3 "" H 8000 5300 50  0001 C CNN
+	1    8000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L podlewaczka-rescue:+3V3-RESCUE-podlewaczka #PWR?
+U 1 1 5A1BFE99
+P 4100 900
+F 0 "#PWR?" H 4100 750 50  0001 C CNN
+F 1 "+3V3" H 4115 1073 50  0000 C CNN
+F 2 "" H 4100 900 50  0001 C CNN
+F 3 "" H 4100 900 50  0001 C CNN
+	1    4100 900 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L podlewaczka:STM32L152_DISCO J7
+U 1 1 59FFCBA2
+P 4400 2300
+F 0 "J7" H 4350 3700 50  0000 L CNN
+F 1 "STM32L152_DISCO" H 5150 800 50  0000 C CNN
+F 2 "fp:STM32L152_DISCO" H 4400 2300 50  0001 C CNN
+F 3 "~" H 4400 2300 50  0001 C CNN
+	1    4400 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1000 4100 1000
+Wire Wire Line
+	4100 1000 4100 900 
+$EndSCHEMATC

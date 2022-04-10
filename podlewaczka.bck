@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STM32L152_DISCO
+D STM32L152 Discovery board header
+K connector stm32 l152
+F ~
+$ENDCMP
+#
+#End Doc Library
